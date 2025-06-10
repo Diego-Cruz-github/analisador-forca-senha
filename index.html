@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Força de Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analisador de Força de Senha</h1>
+        <div class="input-group">
+            <label for="password">Digite sua senha:</label>
+            <input type="password" id="password" placeholder="Sua senha aqui...">
+            <button type="button" id="togglePassword">Mostrar</button>
+        </div>
+        <div class="strength-indicator">
+            <p>Força da Senha: <span id="strengthText">Muito Fraca</span></p>
+            <div class="strength-bar-container">
+                <div class="strength-bar" id="strengthBar"></div>
+            </div>
+        </div>
+        <div class="feedback" id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
